@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.1",
     "concat-cli": "^4.0.0",
     "csso": "^2.3.0",
     "node-sass": "^3.13.0",
