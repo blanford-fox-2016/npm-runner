@@ -6,7 +6,6 @@ new compressor.minify({
   fileOut: './src/minified/script.min.js',
   callback: function(err, min){
     console.log(err);
-    //console.log(min);
   }
 });
 
@@ -17,6 +16,5 @@ new compressor.minify({
     callback: function(err, min){
       console.log('Clean-css');
       console.log(err);
-      //console.log(min);
     }
 });
