@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass src/sass/*.scss dist/css/compiled.css",
+    "untamvan-js": "node ./minconcatjs.js",
+    "untamvan-css": "concat-cli -f src/css/*.css && csso all.css dist/css/all.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concat-cli": "^4.0.0",
+    "csso": "^2.3.0",
     "node-sass": "^3.13.0",
     "sass": "^0.5.0"
   },
