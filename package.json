@@ -5,12 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass src/sass/*scss dist/css/compiled.css"
+    "sass": "node-sass src/sass/*.scss dist/css/compiled.css",
+    "stylus": "stylus -w src/stylus/*.styl -o dist/css/compiled.css",
+    "concat_css": "concat-cli -f src/css/*.css -o dist/css/bundle.css",
+    "concat_js": "concat-cli -f src/js/*.js -o dist/js/bundle.js",
+    "watch_em" : "browser-sync start --server --files \"*.html,dist/css/*.css,dist/js/bundle.js,src/sass/*.scss,src/stylus/*.styl\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^0.5.0"
+    "browser-sync": "^2.18.1",
+    "concat-cli": "^4.0.0",
+    "sass": "^0.5.0",
+    "stylus": "^0.54.5"
   }
 }
