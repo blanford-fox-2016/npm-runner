@@ -1,0 +1,1 @@
+function reverse(e){for(var r="",n=e.length-1;n>=0;n--)r+=e[n];return r}function reverseSayText(e){console.log(reverse(e))}function sayText(e){console.log(e)}reverseSayText("Reverse"),sayText("I'm alive!");
