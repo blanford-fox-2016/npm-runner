@@ -7,6 +7,7 @@
     "sass": "node-sass src/sass/*.scss dist/css/compiled.css",
     "untamvan-js": "node ./minconcatjs.js",
     "untamvan-css": "concat-cli -f src/css/*.css && csso all.css dist/css/all.min.css",
+    "watch": "browser-sync start --server --files 'src/'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
