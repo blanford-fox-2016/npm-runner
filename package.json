@@ -5,12 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass src/sass/*.scss dist/ss/compiled.css"
+    "sass": "node-sass src/sass/*.scss dist/ss/compiled.css",
+    "js": "concat-cli -f src/js/*.js -o dist/js/concat.js",
+    "css": "concat-cli -f src/css/*.css -o dist/css/concat-css.js",
+    "browser": "browser-sync start --server --files *.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "concat-cli": "^4.0.0",
     "sass": "^0.5.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.1"
   }
 }
